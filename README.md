@@ -19,3 +19,7 @@ SELECT * FROM students ORDER BY score DESC LIMIT 3;
 -- Students who failed
 SELECT * FROM students WHERE score < 60;
 
+## 👩‍💻 Author
+Sanvi Sharma – [LinkedIn](https://www.linkedin.com/in/sanvisharma850) | [GitHub](https://github.com/sanvisharma850)
+
+
