@@ -1,0 +1,41 @@
+-- 1. View all student data
+SELECT * FROM STUDENTS;
+
+-- 2. Get STUDENTS with GRADE 'A'
+SELECT * FROM STUDENTS
+WHERE GRADE = 'A';
+
+-- 3. List STUDENTS older than 18
+SELECT NAME, AGE FROM STUDENTS
+WHERE AGE > 18;
+
+-- 4. Students with SCORE above 85
+SELECT NAME, SCORE FROM STUDENTS
+WHERE SCORE > 85;
+
+-- 5. Students who failed (SCORE < 60)
+SELECT * FROM STUDENTS
+WHERE SCORE < 60;
+
+-- 6. Top 3 performers
+SELECT NAME, SCORE FROM STUDENTS
+ORDER BY SCORE DESC
+LIMIT 3;
+
+-- 7. Youngest student with GRADE 'B'
+SELECT * FROM STUDENTS
+WHERE GRADE = 'B'
+ORDER BY AGE ASC
+LIMIT 1;
+
+-- 8. Students whose NAMEs start with 'S'
+SELECT * FROM STUDENTS
+WHERE NAME LIKE 'S%';
+
+-- 9. Count of STUDENTS per GRADE
+SELECT GRADE, COUNT(*) AS student_count
+FROM STUDENTS
+GROUP BY GRADE;
+
+-- 10. Average SCORE of all STUDENTS
+SELECT AVG(SCORE) AS avg_score FROM STUDENTS;
