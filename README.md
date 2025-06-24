@@ -1,20 +1,21 @@
-#  Student Performance Database (SQL Project)
+# 🎓 Student Performance Database (SQL Project)
 
-This project simulates a simple database to manage and analyze student performance data using SQL. It includes table creation, data insertion, filtering, sorting, and ranking.
+This is a beginner-to-intermediate level SQL project that simulates a simple database to manage and analyze student performance using SQL.
 
-##  Tools Used
+## 🔧 Tools Used
 - SQL (Standard SQL syntax)
-- [DB-Fiddle](https://www.db-fiddle.com) for testing
+- [DB-Fiddle](https://www.db-fiddle.com) – for testing queries online
 
-##  Files
-- `schema.sql` – Contains table definitions
-- `data.sql` – Sample student data using INSERT statements
-- `queries.sql` – Practice queries (SELECT, WHERE, ORDER BY, LIMIT, etc.)
+## 📁 Files
+- `schema.sql` – Table creation (with PRIMARY KEY & NOT NULL)
+- `data.sql` – Sample dataset with `INSERT INTO` statements
+- `queries.sql` – Query file with common SELECT, WHERE, ORDER BY, LIMIT operations
 
-##  Example Queries
+## 📊 Sample Queries
 ```sql
--- Get top 3 students by score
+-- Top 3 students by score
 SELECT * FROM students ORDER BY score DESC LIMIT 3;
 
--- List students with score below 60
+-- Students who failed
 SELECT * FROM students WHERE score < 60;
+
